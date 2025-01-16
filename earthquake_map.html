@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5f14f9296d8956008b8511f1cd8d7e6d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5f14f9296d8956008b8511f1cd8d7e6d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5f14f9296d8956008b8511f1cd8d7e6d = L.map(
+                "map_5f14f9296d8956008b8511f1cd8d7e6d",
+                {
+                    center: [24.381798109428612, -41.622934992560744],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_46d78f3b64929e7789f6d5e0015222f2 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_46d78f3b64929e7789f6d5e0015222f2.addTo(map_5f14f9296d8956008b8511f1cd8d7e6d);
+        
+    
+            var circle_marker_bacb29ca0d4a21672e3c0ed258643f38 = L.circleMarker(
+                [36.64049911499, -121.28833007812],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.83, "stroke": true, "weight": 3}
+            ).addTo(map_5f14f9296d8956008b8511f1cd8d7e6d);
+        
+    
+        var popup_3032a1fca891e3fa9fa8f1b128fbdeee = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d208d98eeaf4b66d7de435b94579da54 = $(`<div id="html_d208d98eeaf4b66d7de435b94579da54" style="width: 100.0%; height: 100.0%;">Place: 17 km S of Tres Pinos, CA Magnitude: 2.83</div>`)[0];
+                popup_3032a1fca891e3fa9fa8f1b128fbdeee.setContent(html_d208d98eeaf4b66d7de435b94579da54);
+            
+        
+
+        circle_marker_bacb29ca0d4a21672e3c0ed258643f38.bindPopup(popup_3032a1fca891e3fa9fa8f1b128fbdeee)
+        ;
+
+        
+    
+    
+            var circle_marker_10e14555f8438872f511d5ab97b0980b = L.circleMarker(
+                [36.634498596191, -121.29650115967],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.63, "stroke": true, "weight": 3}
+            ).addTo(map_5f14f9296d8956008b8511f1cd8d7e6d);
+        
+    
+        var popup_39d6693bb37e385bd63a4a6630a40465 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_96d2fd632f015de6f8b86bb212edc842 = $(`<div id="html_96d2fd632f015de6f8b86bb212edc842" style="width: 100.0%; height: 100.0%;">Place: 17 km S of Tres Pinos, CA Magnitude: 2.63</div>`)[0];
+                popup_39d6693bb37e385bd63a4a6630a40465.setContent(html_96d2fd632f015de6f8b86bb212edc842);
+            
+        
+
+        circle_marker_10e14555f8438872f511d5ab97b0980b.bindPopup(popup_39d6693bb37e385bd63a4a6630a40465)
+        ;
+
+        
+    
+    
+            var circle_marker_4b0b71009674c25120ce517322383dd2 = L.circleMarker(
+                [-6.2073, 147.0196],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_5f14f9296d8956008b8511f1cd8d7e6d);
+        
+    
+        var popup_fdd1b965896f1f7e95e68ec9f6d3625a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_438af764546c01cec82bbc00d8bdaf49 = $(`<div id="html_438af764546c01cec82bbc00d8bdaf49" style="width: 100.0%; height: 100.0%;">Place: 57 km N of Lae, Papua New Guinea Magnitude: 5.0</div>`)[0];
+                popup_fdd1b965896f1f7e95e68ec9f6d3625a.setContent(html_438af764546c01cec82bbc00d8bdaf49);
+            
+        
+
+        circle_marker_4b0b71009674c25120ce517322383dd2.bindPopup(popup_fdd1b965896f1f7e95e68ec9f6d3625a)
+        ;
+
+        
+    
+    
+            var circle_marker_7d5b08c4a33b1a5794e5072b5bd3ed4c = L.circleMarker(
+                [18.424166666667, -67.4985],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.0, "stroke": true, "weight": 3}
+            ).addTo(map_5f14f9296d8956008b8511f1cd8d7e6d);
+        
+    
+        var popup_91030f0216b66683bd8dc24a78a82a2a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a19c675a9df33fe1ef576782a8a6a722 = $(`<div id="html_a19c675a9df33fe1ef576782a8a6a722" style="width: 100.0%; height: 100.0%;">Place: 27 km WNW of Rincón, Puerto Rico Magnitude: 3.0</div>`)[0];
+                popup_91030f0216b66683bd8dc24a78a82a2a.setContent(html_a19c675a9df33fe1ef576782a8a6a722);
+            
+        
+
+        circle_marker_7d5b08c4a33b1a5794e5072b5bd3ed4c.bindPopup(popup_91030f0216b66683bd8dc24a78a82a2a)
+        ;
+
+        
+    
+    
+            var circle_marker_78f0a8705acfcbae12572dbcac8e1915 = L.circleMarker(
+                [35.2415009, -118.5208359],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.91, "stroke": true, "weight": 3}
+            ).addTo(map_5f14f9296d8956008b8511f1cd8d7e6d);
+        
+    
+        var popup_f1f341c3104619371d4f0f5d111cd165 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d51b437884452420ba8220fc4b303b95 = $(`<div id="html_d51b437884452420ba8220fc4b303b95" style="width: 100.0%; height: 100.0%;">Place: 14 km NNW of Tehachapi, CA Magnitude: 2.91</div>`)[0];
+                popup_f1f341c3104619371d4f0f5d111cd165.setContent(html_d51b437884452420ba8220fc4b303b95);
+            
+        
+
+        circle_marker_78f0a8705acfcbae12572dbcac8e1915.bindPopup(popup_f1f341c3104619371d4f0f5d111cd165)
+        ;
+
+        
+    
+    
+            var circle_marker_0a038b80f2a52b658d52448e3b606f67 = L.circleMarker(
+                [58.5881, -157.9251],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.7, "stroke": true, "weight": 3}
+            ).addTo(map_5f14f9296d8956008b8511f1cd8d7e6d);
+        
+    
+        var popup_8759105ae7ffad15447001dc73c82514 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_91c51523e23f4218546d01116dccb9e2 = $(`<div id="html_91c51523e23f4218546d01116dccb9e2" style="width: 100.0%; height: 100.0%;">Place: 37 km SSW of Portage Creek, Alaska Magnitude: 2.7</div>`)[0];
+                popup_8759105ae7ffad15447001dc73c82514.setContent(html_91c51523e23f4218546d01116dccb9e2);
+            
+        
+
+        circle_marker_0a038b80f2a52b658d52448e3b606f67.bindPopup(popup_8759105ae7ffad15447001dc73c82514)
+        ;
+
+        
+    
+    
+            var circle_marker_5583fc1dbf7cf97e2af56a98d430e4db = L.circleMarker(
+                [58.6631, -158.5336],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.6, "stroke": true, "weight": 3}
+            ).addTo(map_5f14f9296d8956008b8511f1cd8d7e6d);
+        
+    
+        var popup_2043c6cea0ac89a20145d543b40cd154 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fabd19729373fc822cd0dca940ebad01 = $(`<div id="html_fabd19729373fc822cd0dca940ebad01" style="width: 100.0%; height: 100.0%;">Place: 19 km S of Clarks Point, Alaska Magnitude: 3.6</div>`)[0];
+                popup_2043c6cea0ac89a20145d543b40cd154.setContent(html_fabd19729373fc822cd0dca940ebad01);
+            
+        
+
+        circle_marker_5583fc1dbf7cf97e2af56a98d430e4db.bindPopup(popup_2043c6cea0ac89a20145d543b40cd154)
+        ;
+
+        
+    
+    
+            var circle_marker_ebdee2c7b11333e517be6041b9c1aa18 = L.circleMarker(
+                [64.9657, -149.1691],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.8, "stroke": true, "weight": 3}
+            ).addTo(map_5f14f9296d8956008b8511f1cd8d7e6d);
+        
+    
+        var popup_95d161923aba67f5a50c5da86e6b674c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_66408e60d9452982b61639a9f5786142 = $(`<div id="html_66408e60d9452982b61639a9f5786142" style="width: 100.0%; height: 100.0%;">Place: 22 km SSE of Minto, Alaska Magnitude: 2.8</div>`)[0];
+                popup_95d161923aba67f5a50c5da86e6b674c.setContent(html_66408e60d9452982b61639a9f5786142);
+            
+        
+
+        circle_marker_ebdee2c7b11333e517be6041b9c1aa18.bindPopup(popup_95d161923aba67f5a50c5da86e6b674c)
+        ;
+
+        
+    
+    
+            var circle_marker_2e44cc672345c24332da5fb00555b5b2 = L.circleMarker(
+                [-2.4135, 138.9645],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.7, "stroke": true, "weight": 3}
+            ).addTo(map_5f14f9296d8956008b8511f1cd8d7e6d);
+        
+    
+        var popup_575a035dff271cf13db4913741f7cb5b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e9d709ca83526b333d38924e96618d6c = $(`<div id="html_e9d709ca83526b333d38924e96618d6c" style="width: 100.0%; height: 100.0%;">Place: 186 km W of Abepura, Indonesia Magnitude: 4.7</div>`)[0];
+                popup_575a035dff271cf13db4913741f7cb5b.setContent(html_e9d709ca83526b333d38924e96618d6c);
+            
+        
+
+        circle_marker_2e44cc672345c24332da5fb00555b5b2.bindPopup(popup_575a035dff271cf13db4913741f7cb5b)
+        ;
+
+        
+    
+    
+            var circle_marker_51783d85bdff75e0e22275340ad57cef = L.circleMarker(
+                [-2.2896, -79.8333],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.1, "stroke": true, "weight": 3}
+            ).addTo(map_5f14f9296d8956008b8511f1cd8d7e6d);
+        
+    
+        var popup_f5e1efbd2fbb92a8b1f67b0bedd5b122 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_301e56b700a201dcc177a280d9187a27 = $(`<div id="html_301e56b700a201dcc177a280d9187a27" style="width: 100.0%; height: 100.0%;">Place: 11 km SSE of Guayaquil, Ecuador Magnitude: 5.1</div>`)[0];
+                popup_f5e1efbd2fbb92a8b1f67b0bedd5b122.setContent(html_301e56b700a201dcc177a280d9187a27);
+            
+        
+
+        circle_marker_51783d85bdff75e0e22275340ad57cef.bindPopup(popup_f5e1efbd2fbb92a8b1f67b0bedd5b122)
+        ;
+
+        
+    
+    
+            var circle_marker_6fb1ce99d5fa53aff6759fa35600fb03 = L.circleMarker(
+                [67.3186, -156.2347],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.6, "stroke": true, "weight": 3}
+            ).addTo(map_5f14f9296d8956008b8511f1cd8d7e6d);
+        
+    
+        var popup_d733de10465efda0da2630078c9fe819 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bee1ae72cf3282d1c7737954a5981af9 = $(`<div id="html_bee1ae72cf3282d1c7737954a5981af9" style="width: 100.0%; height: 100.0%;">Place: 53 km NNE of Kobuk, Alaska Magnitude: 2.6</div>`)[0];
+                popup_d733de10465efda0da2630078c9fe819.setContent(html_bee1ae72cf3282d1c7737954a5981af9);
+            
+        
+
+        circle_marker_6fb1ce99d5fa53aff6759fa35600fb03.bindPopup(popup_d733de10465efda0da2630078c9fe819)
+        ;
+
+        
+    
+    
+            var circle_marker_2892b53b94546cb837b815c875c915d4 = L.circleMarker(
+                [19.129833221436, -155.39399719238],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.49, "stroke": true, "weight": 3}
+            ).addTo(map_5f14f9296d8956008b8511f1cd8d7e6d);
+        
+    
+        var popup_29cff20c16dfc6160a9f73f8f052e2da = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3d9c619d6b87b3f5048b3242c69b5b6c = $(`<div id="html_3d9c619d6b87b3f5048b3242c69b5b6c" style="width: 100.0%; height: 100.0%;">Place: 12 km SE of Pāhala, Hawaii Magnitude: 2.49</div>`)[0];
+                popup_29cff20c16dfc6160a9f73f8f052e2da.setContent(html_3d9c619d6b87b3f5048b3242c69b5b6c);
+            
+        
+
+        circle_marker_2892b53b94546cb837b815c875c915d4.bindPopup(popup_29cff20c16dfc6160a9f73f8f052e2da)
+        ;
+
+        
+    
+    
+            var circle_marker_f84adff8119748eb8691c534f473d121 = L.circleMarker(
+                [17.868666666667, -66.881666666667],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.53, "stroke": true, "weight": 3}
+            ).addTo(map_5f14f9296d8956008b8511f1cd8d7e6d);
+        
+    
+        var popup_d21581218a5142ae253b48d97077391e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cb3a74f4834bb22450f5d613d6b4fb3d = $(`<div id="html_cb3a74f4834bb22450f5d613d6b4fb3d" style="width: 100.0%; height: 100.0%;">Place: 11 km SSE of Guánica, Puerto Rico Magnitude: 2.53</div>`)[0];
+                popup_d21581218a5142ae253b48d97077391e.setContent(html_cb3a74f4834bb22450f5d613d6b4fb3d);
+            
+        
+
+        circle_marker_f84adff8119748eb8691c534f473d121.bindPopup(popup_d21581218a5142ae253b48d97077391e)
+        ;
+
+        
+    
+    
+            var circle_marker_33cae9a39a31fb79fafb1a874f68639a = L.circleMarker(
+                [6.6152, 123.7945],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.4, "stroke": true, "weight": 3}
+            ).addTo(map_5f14f9296d8956008b8511f1cd8d7e6d);
+        
+    
+        var popup_5eacbcadd207e17999ac88a3d4865a32 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e42f1c65ac681cf545d53d4a2c751705 = $(`<div id="html_e42f1c65ac681cf545d53d4a2c751705" style="width: 100.0%; height: 100.0%;">Place: 27 km WNW of Bantogon, Philippines Magnitude: 5.4</div>`)[0];
+                popup_5eacbcadd207e17999ac88a3d4865a32.setContent(html_e42f1c65ac681cf545d53d4a2c751705);
+            
+        
+
+        circle_marker_33cae9a39a31fb79fafb1a874f68639a.bindPopup(popup_5eacbcadd207e17999ac88a3d4865a32)
+        ;
+
+        
+    
+    
+            var circle_marker_d3f933c13df8a20507bf8f4b960f1dd0 = L.circleMarker(
+                [60.8622, -152.1981],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_5f14f9296d8956008b8511f1cd8d7e6d);
+        
+    
+        var popup_83f77daa12f01fd1d39caa3a4c9029b5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c6937c7edefdede1070bf9d0c9574412 = $(`<div id="html_c6937c7edefdede1070bf9d0c9574412" style="width: 100.0%; height: 100.0%;">Place: 53 km WNW of Nikiski, Alaska Magnitude: 2.5</div>`)[0];
+                popup_83f77daa12f01fd1d39caa3a4c9029b5.setContent(html_c6937c7edefdede1070bf9d0c9574412);
+            
+        
+
+        circle_marker_d3f933c13df8a20507bf8f4b960f1dd0.bindPopup(popup_83f77daa12f01fd1d39caa3a4c9029b5)
+        ;
+
+        
+    
+    
+            var circle_marker_59227b336e302fe3469f920a4bc6c6fb = L.circleMarker(
+                [4.4303, 125.8948],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.3, "stroke": true, "weight": 3}
+            ).addTo(map_5f14f9296d8956008b8511f1cd8d7e6d);
+        
+    
+        var popup_63d71d1de35414c05a2b0a5a92f7bb95 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_70a0737393d380612f4abfc9ea601201 = $(`<div id="html_70a0737393d380612f4abfc9ea601201" style="width: 100.0%; height: 100.0%;">Place: 117 km SSE of Sarangani, Philippines Magnitude: 4.3</div>`)[0];
+                popup_63d71d1de35414c05a2b0a5a92f7bb95.setContent(html_70a0737393d380612f4abfc9ea601201);
+            
+        
+
+        circle_marker_59227b336e302fe3469f920a4bc6c6fb.bindPopup(popup_63d71d1de35414c05a2b0a5a92f7bb95)
+        ;
+
+        
+    
+    
+            var circle_marker_3ece6dad9090a835070dffa5b3d35c29 = L.circleMarker(
+                [28.2659, 142.1639],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.2, "stroke": true, "weight": 3}
+            ).addTo(map_5f14f9296d8956008b8511f1cd8d7e6d);
+        
+    
+        var popup_0aee0e7a0bbc3d0dc86ed6aba442f032 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f87c58100a7fcafd7423a0b08383d206 = $(`<div id="html_f87c58100a7fcafd7423a0b08383d206" style="width: 100.0%; height: 100.0%;">Place: Bonin Islands, Japan region Magnitude: 5.2</div>`)[0];
+                popup_0aee0e7a0bbc3d0dc86ed6aba442f032.setContent(html_f87c58100a7fcafd7423a0b08383d206);
+            
+        
+
+        circle_marker_3ece6dad9090a835070dffa5b3d35c29.bindPopup(popup_0aee0e7a0bbc3d0dc86ed6aba442f032)
+        ;
+
+        
+    
+    
+            var circle_marker_06d31363ba8cdd69fd43fe49bcb598a4 = L.circleMarker(
+                [19.263500213623, -155.40316772461],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.0999999, "stroke": true, "weight": 3}
+            ).addTo(map_5f14f9296d8956008b8511f1cd8d7e6d);
+        
+    
+        var popup_9f38809280935c566d74e24ec4d91c06 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f3e8fc4afe9e68485eb5e59df3d429eb = $(`<div id="html_f3e8fc4afe9e68485eb5e59df3d429eb" style="width: 100.0%; height: 100.0%;">Place: 10 km NE of Pāhala, Hawaii Magnitude: 3.0999999</div>`)[0];
+                popup_9f38809280935c566d74e24ec4d91c06.setContent(html_f3e8fc4afe9e68485eb5e59df3d429eb);
+            
+        
+
+        circle_marker_06d31363ba8cdd69fd43fe49bcb598a4.bindPopup(popup_9f38809280935c566d74e24ec4d91c06)
+        ;
+
+        
+    
+    
+            var circle_marker_4335eb12f2f7a584588069b39dd4dcf1 = L.circleMarker(
+                [60.4108, -149.544],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.7, "stroke": true, "weight": 3}
+            ).addTo(map_5f14f9296d8956008b8511f1cd8d7e6d);
+        
+    
+        var popup_d4b24c0cb01aff98f487004b75520d30 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a0a3cbbf7440256eba45ac2b873ba69c = $(`<div id="html_a0a3cbbf7440256eba45ac2b873ba69c" style="width: 100.0%; height: 100.0%;">Place: 9 km W of Crown Point, Alaska Magnitude: 2.7</div>`)[0];
+                popup_d4b24c0cb01aff98f487004b75520d30.setContent(html_a0a3cbbf7440256eba45ac2b873ba69c);
+            
+        
+
+        circle_marker_4335eb12f2f7a584588069b39dd4dcf1.bindPopup(popup_d4b24c0cb01aff98f487004b75520d30)
+        ;
+
+        
+    
+    
+            var circle_marker_fe44bd0ebca74fcdda8ae3192cea9b40 = L.circleMarker(
+                [9.1989, 39.9636],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.4, "stroke": true, "weight": 3}
+            ).addTo(map_5f14f9296d8956008b8511f1cd8d7e6d);
+        
+    
+        var popup_62c46ab60a77897e43979c98c6690aba = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f6dd0f8bacfaf9af2d1d8dfc2cbe42e3 = $(`<div id="html_f6dd0f8bacfaf9af2d1d8dfc2cbe42e3" style="width: 100.0%; height: 100.0%;">Place: 32 km NW of Āwash, Ethiopia Magnitude: 4.4</div>`)[0];
+                popup_62c46ab60a77897e43979c98c6690aba.setContent(html_f6dd0f8bacfaf9af2d1d8dfc2cbe42e3);
+            
+        
+
+        circle_marker_fe44bd0ebca74fcdda8ae3192cea9b40.bindPopup(popup_62c46ab60a77897e43979c98c6690aba)
+        ;
+
+        
+    
+    
+            var circle_marker_fcdc26dbbb98a3083af44341c6ab5d11 = L.circleMarker(
+                [-10.9056, 114.3714],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.5, "stroke": true, "weight": 3}
+            ).addTo(map_5f14f9296d8956008b8511f1cd8d7e6d);
+        
+    
+        var popup_a48d71e58b14f203865c4b3ac79f0886 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_96b50406f362531fd60615ce033a84ae = $(`<div id="html_96b50406f362531fd60615ce033a84ae" style="width: 100.0%; height: 100.0%;">Place: 249 km SSW of Jimbaran, Indonesia Magnitude: 4.5</div>`)[0];
+                popup_a48d71e58b14f203865c4b3ac79f0886.setContent(html_96b50406f362531fd60615ce033a84ae);
+            
+        
+
+        circle_marker_fcdc26dbbb98a3083af44341c6ab5d11.bindPopup(popup_a48d71e58b14f203865c4b3ac79f0886)
+        ;
+
+        
+    
+    
+            var circle_marker_88098d19b837fb2aec021037aca96267 = L.circleMarker(
+                [62.2679, 4.8099],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.4, "stroke": true, "weight": 3}
+            ).addTo(map_5f14f9296d8956008b8511f1cd8d7e6d);
+        
+    
+        var popup_0e48a40016d5a720e79c35bdd826c535 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ef27431a9243f1a66a572c6b00234015 = $(`<div id="html_ef27431a9243f1a66a572c6b00234015" style="width: 100.0%; height: 100.0%;">Place: 40 km NNW of Måløy, Norway Magnitude: 4.4</div>`)[0];
+                popup_0e48a40016d5a720e79c35bdd826c535.setContent(html_ef27431a9243f1a66a572c6b00234015);
+            
+        
+
+        circle_marker_88098d19b837fb2aec021037aca96267.bindPopup(popup_0e48a40016d5a720e79c35bdd826c535)
+        ;
+
+        
+    
+    
+            var circle_marker_17d97adfc07e37d2ef91c7bd3479ef80 = L.circleMarker(
+                [8.8674, 39.9715],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.9, "stroke": true, "weight": 3}
+            ).addTo(map_5f14f9296d8956008b8511f1cd8d7e6d);
+        
+    
+        var popup_63ad7597ff49cfd3b61ea5c0522cfe74 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f3eef53f702604ed14fcb2d4bd4141c7 = $(`<div id="html_f3eef53f702604ed14fcb2d4bd4141c7" style="width: 100.0%; height: 100.0%;">Place: 7 km ESE of Metahāra, Ethiopia Magnitude: 4.9</div>`)[0];
+                popup_63ad7597ff49cfd3b61ea5c0522cfe74.setContent(html_f3eef53f702604ed14fcb2d4bd4141c7);
+            
+        
+
+        circle_marker_17d97adfc07e37d2ef91c7bd3479ef80.bindPopup(popup_63ad7597ff49cfd3b61ea5c0522cfe74)
+        ;
+
+        
+    
+    
+            var circle_marker_10c0226eccff799812f8db00025e0353 = L.circleMarker(
+                [27.3044, 140.3179],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(map_5f14f9296d8956008b8511f1cd8d7e6d);
+        
+    
+        var popup_165b35a3647329aaf259faec1c1bc510 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e1ab369948ef17ba3e96adba9d6300a3 = $(`<div id="html_e1ab369948ef17ba3e96adba9d6300a3" style="width: 100.0%; height: 100.0%;">Place: Bonin Islands, Japan region Magnitude: 4.0</div>`)[0];
+                popup_165b35a3647329aaf259faec1c1bc510.setContent(html_e1ab369948ef17ba3e96adba9d6300a3);
+            
+        
+
+        circle_marker_10c0226eccff799812f8db00025e0353.bindPopup(popup_165b35a3647329aaf259faec1c1bc510)
+        ;
+
+        
+    
+    
+            var circle_marker_53ac533f819fd0f13666fe01d15a53e0 = L.circleMarker(
+                [-31.0103, -70.2787],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.4, "stroke": true, "weight": 3}
+            ).addTo(map_5f14f9296d8956008b8511f1cd8d7e6d);
+        
+    
+        var popup_89aba2a8f8520ae5c42d978b9795242b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8718fe3930b8b04db2af261113f8360c = $(`<div id="html_8718fe3930b8b04db2af261113f8360c" style="width: 100.0%; height: 100.0%;">Place: 73 km ESE of Monte Patria, Chile Magnitude: 4.4</div>`)[0];
+                popup_89aba2a8f8520ae5c42d978b9795242b.setContent(html_8718fe3930b8b04db2af261113f8360c);
+            
+        
+
+        circle_marker_53ac533f819fd0f13666fe01d15a53e0.bindPopup(popup_89aba2a8f8520ae5c42d978b9795242b)
+        ;
+
+        
+    
+    
+            var circle_marker_46637664d0ccb3968561189b27e753f9 = L.circleMarker(
+                [28.1824, 139.9003],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.5, "stroke": true, "weight": 3}
+            ).addTo(map_5f14f9296d8956008b8511f1cd8d7e6d);
+        
+    
+        var popup_b3d4bdb21aa34c9385648474a14e35ee = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_47118794cff41f26e44981041089e541 = $(`<div id="html_47118794cff41f26e44981041089e541" style="width: 100.0%; height: 100.0%;">Place: Bonin Islands, Japan region Magnitude: 4.5</div>`)[0];
+                popup_b3d4bdb21aa34c9385648474a14e35ee.setContent(html_47118794cff41f26e44981041089e541);
+            
+        
+
+        circle_marker_46637664d0ccb3968561189b27e753f9.bindPopup(popup_b3d4bdb21aa34c9385648474a14e35ee)
+        ;
+
+        
+    
+    
+            var circle_marker_24dbcb73d7500759b06d5ceb14767537 = L.circleMarker(
+                [37.960166666667, -122.0425],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.54, "stroke": true, "weight": 3}
+            ).addTo(map_5f14f9296d8956008b8511f1cd8d7e6d);
+        
+    
+        var popup_9945ca0032568b5e250a7f6e910a58c1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1f1fa3f693bdc601b006a0e0ffc8fb2a = $(`<div id="html_1f1fa3f693bdc601b006a0e0ffc8fb2a" style="width: 100.0%; height: 100.0%;">Place: 2 km ENE of Pleasant Hill, CA Magnitude: 3.54</div>`)[0];
+                popup_9945ca0032568b5e250a7f6e910a58c1.setContent(html_1f1fa3f693bdc601b006a0e0ffc8fb2a);
+            
+        
+
+        circle_marker_24dbcb73d7500759b06d5ceb14767537.bindPopup(popup_9945ca0032568b5e250a7f6e910a58c1)
+        ;
+
+        
+    
+    
+            var circle_marker_a6c9ac2b2899dbbe19c0d785789e4318 = L.circleMarker(
+                [-17.7155, -70.825],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.4, "stroke": true, "weight": 3}
+            ).addTo(map_5f14f9296d8956008b8511f1cd8d7e6d);
+        
+    
+        var popup_309ebe6d03cbda368b8ae98fbddb1d7d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0cafd2b84ecff98599f6f8133806ffb3 = $(`<div id="html_0cafd2b84ecff98599f6f8133806ffb3" style="width: 100.0%; height: 100.0%;">Place: 13 km SSW of Locumba, Peru Magnitude: 4.4</div>`)[0];
+                popup_309ebe6d03cbda368b8ae98fbddb1d7d.setContent(html_0cafd2b84ecff98599f6f8133806ffb3);
+            
+        
+
+        circle_marker_a6c9ac2b2899dbbe19c0d785789e4318.bindPopup(popup_309ebe6d03cbda368b8ae98fbddb1d7d)
+        ;
+
+        
+    
+    
+            var circle_marker_f19c1b0b2dcd1726381b0f4dd0614ec2 = L.circleMarker(
+                [-21.5352, -66.9467],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.4, "stroke": true, "weight": 3}
+            ).addTo(map_5f14f9296d8956008b8511f1cd8d7e6d);
+        
+    
+        var popup_fd7df394ade660b519193155657115d9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3eec9298445edb6a2e9d0bd86c869643 = $(`<div id="html_3eec9298445edb6a2e9d0bd86c869643" style="width: 100.0%; height: 100.0%;">Place: 100 km SW of Atocha, Bolivia Magnitude: 4.4</div>`)[0];
+                popup_fd7df394ade660b519193155657115d9.setContent(html_3eec9298445edb6a2e9d0bd86c869643);
+            
+        
+
+        circle_marker_f19c1b0b2dcd1726381b0f4dd0614ec2.bindPopup(popup_fd7df394ade660b519193155657115d9)
+        ;
+
+        
+    
+    
+            var circle_marker_64ad1388b015f358cd36dbc099375167 = L.circleMarker(
+                [38.4967, -118.5476],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_5f14f9296d8956008b8511f1cd8d7e6d);
+        
+    
+        var popup_a120e670a7f5023792a792649db2da51 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5e4881e0df02d95f7eef7647acd72988 = $(`<div id="html_5e4881e0df02d95f7eef7647acd72988" style="width: 100.0%; height: 100.0%;">Place: 7 km ESE of Hawthorne, Nevada Magnitude: 2.5</div>`)[0];
+                popup_a120e670a7f5023792a792649db2da51.setContent(html_5e4881e0df02d95f7eef7647acd72988);
+            
+        
+
+        circle_marker_64ad1388b015f358cd36dbc099375167.bindPopup(popup_a120e670a7f5023792a792649db2da51)
+        ;
+
+        
+    
+    
+            var circle_marker_6b3c9ed8abcde6dfa846bff1a9a1ad78 = L.circleMarker(
+                [-17.8257, -178.4616],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.4, "stroke": true, "weight": 3}
+            ).addTo(map_5f14f9296d8956008b8511f1cd8d7e6d);
+        
+    
+        var popup_4047ba3a59e720bbb7dceb584db47d34 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_84c77aca989bd981d9cddff04e54b13d = $(`<div id="html_84c77aca989bd981d9cddff04e54b13d" style="width: 100.0%; height: 100.0%;">Place: 236 km E of Levuka, Fiji Magnitude: 5.4</div>`)[0];
+                popup_4047ba3a59e720bbb7dceb584db47d34.setContent(html_84c77aca989bd981d9cddff04e54b13d);
+            
+        
+
+        circle_marker_6b3c9ed8abcde6dfa846bff1a9a1ad78.bindPopup(popup_4047ba3a59e720bbb7dceb584db47d34)
+        ;
+
+        
+    
+    
+            var circle_marker_779e280392da4edd9d04b87334396cf0 = L.circleMarker(
+                [44.6836, 36.5758],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.2, "stroke": true, "weight": 3}
+            ).addTo(map_5f14f9296d8956008b8511f1cd8d7e6d);
+        
+    
+        var popup_3b4841a924e118ae795ba2e1568224a4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_93b17f8cf0366fcc217c7e6dfc2a03b3 = $(`<div id="html_93b17f8cf0366fcc217c7e6dfc2a03b3" style="width: 100.0%; height: 100.0%;">Place: 50 km SSE of Zavetnoye, Ukraine Magnitude: 4.2</div>`)[0];
+                popup_3b4841a924e118ae795ba2e1568224a4.setContent(html_93b17f8cf0366fcc217c7e6dfc2a03b3);
+            
+        
+
+        circle_marker_779e280392da4edd9d04b87334396cf0.bindPopup(popup_3b4841a924e118ae795ba2e1568224a4)
+        ;
+
+        
+    
+    
+            var circle_marker_6f1f3e9168b4bdafff30dbef750f1585 = L.circleMarker(
+                [46.4035, 12.8145],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.3, "stroke": true, "weight": 3}
+            ).addTo(map_5f14f9296d8956008b8511f1cd8d7e6d);
+        
+    
+        var popup_0bd6d3fc3b4a743e643581c9603f5ac9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1cfe74889f8a5ef06ed3599ace38c0c7 = $(`<div id="html_1cfe74889f8a5ef06ed3599ace38c0c7" style="width: 100.0%; height: 100.0%;">Place: 0 km W of Mediis, Italy Magnitude: 4.3</div>`)[0];
+                popup_0bd6d3fc3b4a743e643581c9603f5ac9.setContent(html_1cfe74889f8a5ef06ed3599ace38c0c7);
+            
+        
+
+        circle_marker_6f1f3e9168b4bdafff30dbef750f1585.bindPopup(popup_0bd6d3fc3b4a743e643581c9603f5ac9)
+        ;
+
+        
+    
+    
+            var circle_marker_46aea34a40960303a096a2a3729df158 = L.circleMarker(
+                [19.211999893189, -155.38066101074],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.53, "stroke": true, "weight": 3}
+            ).addTo(map_5f14f9296d8956008b8511f1cd8d7e6d);
+        
+    
+        var popup_4d0671266d62070a620c0575246e09e5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f76ba71a6deac84117a12e5b11287508 = $(`<div id="html_f76ba71a6deac84117a12e5b11287508" style="width: 100.0%; height: 100.0%;">Place: 10 km E of Pāhala, Hawaii Magnitude: 2.53</div>`)[0];
+                popup_4d0671266d62070a620c0575246e09e5.setContent(html_f76ba71a6deac84117a12e5b11287508);
+            
+        
+
+        circle_marker_46aea34a40960303a096a2a3729df158.bindPopup(popup_4d0671266d62070a620c0575246e09e5)
+        ;
+
+        
+    
+    
+            var circle_marker_922ed9e19ba50f867d0799e86049cc7d = L.circleMarker(
+                [62.471, -152.6147],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.7, "stroke": true, "weight": 3}
+            ).addTo(map_5f14f9296d8956008b8511f1cd8d7e6d);
+        
+    
+        var popup_3a19bdadebf47412f46e6cbc75b7310e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3fd5fae3d5766206e4c91c7a193db534 = $(`<div id="html_3fd5fae3d5766206e4c91c7a193db534" style="width: 100.0%; height: 100.0%;">Place: 82 km NW of Skwentna, Alaska Magnitude: 2.7</div>`)[0];
+                popup_3a19bdadebf47412f46e6cbc75b7310e.setContent(html_3fd5fae3d5766206e4c91c7a193db534);
+            
+        
+
+        circle_marker_922ed9e19ba50f867d0799e86049cc7d.bindPopup(popup_3a19bdadebf47412f46e6cbc75b7310e)
+        ;
+
+        
+    
+    
+            var circle_marker_8db22e9ba2b022c01abe62d0774b5178 = L.circleMarker(
+                [9.2769, 39.8305],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.5, "stroke": true, "weight": 3}
+            ).addTo(map_5f14f9296d8956008b8511f1cd8d7e6d);
+        
+    
+        var popup_c6eb0e4dca03d1539bfd91e58ef997e4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_be763a65250756130b3a42540772687b = $(`<div id="html_be763a65250756130b3a42540772687b" style="width: 100.0%; height: 100.0%;">Place: 42 km NNW of Metahāra, Ethiopia Magnitude: 4.5</div>`)[0];
+                popup_c6eb0e4dca03d1539bfd91e58ef997e4.setContent(html_be763a65250756130b3a42540772687b);
+            
+        
+
+        circle_marker_8db22e9ba2b022c01abe62d0774b5178.bindPopup(popup_c6eb0e4dca03d1539bfd91e58ef997e4)
+        ;
+
+        
+    
+</script>
+</html>
