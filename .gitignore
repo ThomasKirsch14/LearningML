@@ -2,3 +2,10 @@
 /mlmodeling
 /project.code-workspace
 /data
+/accident-causal/IHMStefanini_industrial_safety_and_health_database.csv
+/accident-causal/with_description.csv
+/text-analysis/handball-scrape.csv
+/text-analysis/arino-fuechse.csv
+traffic.csv
+grades.csv
+fraud_detect.csv
